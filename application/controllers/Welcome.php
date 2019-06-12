@@ -32,4 +32,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('contact.php');
 	}
+
+	public function login()
+	{
+		$this->load->view('login.php');
+	}
 }
