@@ -33,6 +33,7 @@
 										<th>Price</th>
 										<th>Photo</th>
 										<th>Description</th>
+										<th>Package Type</th>
 										<th>Action</th>
 									</tr>
 								</thead>
@@ -50,6 +51,9 @@
 										</td>
 										<td class="small">
 											<?php echo substr($package->description, 0, 120) ?>...</td>
+										<td width="100">
+											<?php echo $package->package_type ?>
+										</td>
 										<td width="250">
 											<a href="<?php echo site_url('admin/package/edit/'.$package->package_id) ?>"
 											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>

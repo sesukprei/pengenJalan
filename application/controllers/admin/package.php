@@ -30,6 +30,7 @@ class Package extends CI_Controller
       $package->save();
       $this->session->set_flashdata('success', 'berhasil disimpan!!!');
     }
+    // $data['package_type'] = $this->package_model->getAllPackageType();
     $this->load->view("admin/package/add");
   }
 
@@ -60,5 +61,7 @@ class Package extends CI_Controller
       redirect(site_url('admin/package'));
     }
   }
+
+
 
 }

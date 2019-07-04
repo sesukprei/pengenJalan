@@ -45,6 +45,7 @@ class Package_model extends CI_Model
         $this->price = $post["price"];
         $this->image = $this->_uploadImage();
         $this->description = $post["description"];
+        $this->package_type = $post["package_type"];
         $this->db->insert($this->_table, $this);
     }
 
@@ -62,6 +63,7 @@ class Package_model extends CI_Model
         }
 
         $this->description = $post["description"];
+        $this->package_type = $post["package_type"];
         $this->db->update($this->_table, $this, array('package_id' => $post['id']));
     }
 
@@ -88,4 +90,23 @@ class Package_model extends CI_Model
 
         return "default.jpg";
     }
+
+    function getAllPackageType()
+    {
+        /*
+        $query = $this->db->get('location');
+
+        foreach ($query->result() as $row)
+        {
+            echo $row->description;
+        }*/
+
+        $query = $this->db->query('SELECT package_type FROM package_type');
+
+
+        return $query->result();
+
+        //echo 'Total Results: ' . $query->num_rows();
+    }
+
 }

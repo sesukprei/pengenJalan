@@ -13,6 +13,7 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <a class="dropdown-item" href="<?php echo site_url('admin/package/') ?>">Package</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/content/') ?>">Content</a>
       </div>
   </li>
   <li class="nav-item">
@@ -20,9 +21,16 @@
           <i class="fas fa-fw fa-users"></i>
           <span>Users</span></a>
   </li>
-  <li class="nav-item">
-      <a class="nav-link" href="#">
+  <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'products' ? 'active': '' ?>">
+      <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Settings</span></a>
+          <span>Settings</span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+        <a class="dropdown-item" href="<?php echo site_url('admin/feedback/') ?>">Feedback</a>
+        <a class="dropdown-item" href="<?php echo site_url('admin/tagType/') ?>">Tag Type</a>
+      </div>
   </li>
+
 </ul>

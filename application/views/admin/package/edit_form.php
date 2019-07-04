@@ -75,6 +75,20 @@
 								</div>
 							</div>
 
+							<div class="form-group">
+										<?php
+											$package_type = array (1=>'Domestic', 'International', 'Hot Promo');
+
+											$opsi_package_type = '<select name="package_type">';
+											foreach ($package_type as $key => $value) {
+												$opsi_package_type .= '<option value="' . $key . '">' . $value . '</option>' . "\r\n";
+											}
+											$opsi_package_type .= '</select>';
+
+											echo $opsi_package_type;
+										?>
+							</div>
+
 							<input class="btn btn-success" type="submit" name="btn" value="Save" />
 						</form>
 
