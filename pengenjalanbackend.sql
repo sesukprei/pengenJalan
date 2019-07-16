@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2019 at 07:22 AM
+-- Generation Time: Jul 16, 2019 at 08:38 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.6
 
@@ -61,11 +61,6 @@ CREATE TABLE `package` (
 --
 
 INSERT INTO `package` (`package_id`, `name`, `price`, `image`, `description`, `package_type`) VALUES
-('5', 'Jogja', 2000000, '5ced01b67f04a.jpg', 'Pergi kejogja dengan modal minimal', '1'),
-('5ced09ca28823', 'Bali', 6000000, '5ced09ca28823.jpg', 'Pergi kebali dengan harga terjangkau, pas untuk anak kosan', '1'),
-('5d00c6f4a487e', 'Jayapura', 8000000, '5d00c6f4a487e.jpg', 'Jelajah ke papua dengan paket dari kami', '1'),
-('5d0753e085772', 'Malang', 7000000, '5d0753e085772.jpg', 'Pergi ke Malang hari ini', '1'),
-('5d2d5a5100a13', 'Jogja', 60000000, '5d2d5a5100a13.jpg', 'nyoba', '2'),
 ('5d2d5b45aaa76', 'bromo asik', 1000000, '5d2d5b45aaa76.jpg', 'sedang mencoba', '2');
 
 -- --------------------------------------------------------
