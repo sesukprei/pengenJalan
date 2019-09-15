@@ -4,7 +4,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title><?php echo SITE_NAME .": ". ucfirst($this->uri->segment(1)) ." - ". ucfirst($this->uri->segment(2)) ?></title>
+<title>Digital Marketing x <?php echo SITE_NAME .": ". ucfirst($this->uri->segment(1)) ." - ". ucfirst($this->uri->segment(2)) ?></title>
 
 <!-- Custom fonts for this template-->
 <link href="<?php echo base_url('/assets/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">

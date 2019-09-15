@@ -9,11 +9,17 @@
       <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
           <i class="fas fa-fw fa-boxes"></i>
-          <span>Package</span>
+          <span>Home</span>
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="<?php echo site_url('admin/package/') ?>">Package</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/package/') ?>">Banner Slide</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/keunggulan/') ?>">Keunggulan</a>
+          <a class="dropdown-item" href="#">Our Works</a>
       </div>
+      <a class="nav-link" href="<?php echo site_url('admin/footer/footerList/') ?>" id="" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+          <!-- <i class="fas fa-fw fa-boxes"></i> -->
+          <span>Footer</span>
+      </a>
   </li>
 
 </ul>
