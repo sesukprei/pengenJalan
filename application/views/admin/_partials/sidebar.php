@@ -17,7 +17,7 @@
           <a class="dropdown-item" href="#">Our Works</a>
       </div>
       <a class="nav-link" href="<?php echo site_url('admin/footer/footerList/') ?>" id="" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
-          <!-- <i class="fas fa-fw fa-boxes"></i> -->
+          <i class="fas fa-fw fa-folder"></i>
           <span>Footer</span>
       </a>
   </li>

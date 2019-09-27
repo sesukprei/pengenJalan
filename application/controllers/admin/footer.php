@@ -21,22 +21,9 @@ class footer extends CI_Controller
     $this->load->view("admin/footer/footerList", $data);
   }
 
-  public function footerAdd()
+  public function footerList($id = null)
   {
-    $footer = $this->footer_model;
-    $validation = $this->form_validation;
-    $validation->set_rules($footer->rules());
-
-    if ($validation->run()){
-      $footer->save();
-      $this->session->set_flashdata('success', 'berhasil disimpan!!!');
-    }
-    $this->load->view("admin/footer/footerAdd");
-  }
-
-  public function footerList()
-  {
-    if (!isset($id)) redirect('admin/footer/');
+    if (!isset($id)) redirect('admin/footer');
 
     $footer = $this->footer_model;
     $validation = $this->form_validation;
@@ -47,10 +34,11 @@ class footer extends CI_Controller
       $this->session->set_flashdata('success', 'berhasil disimpan!!!');
     }
 
-    $data["footer"] = $footer->getById();
+    $data["footer"] = $footer->getById($id);
     if (!$data["footer"]) show_404();
 
     $this->load->view("admin/footer/footerList", $data);
   }
+
 
 }

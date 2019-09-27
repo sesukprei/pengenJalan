@@ -59,20 +59,6 @@ class footer_model extends CI_Model
       return $this->db->get_where($this->_table, ["id" => $id])->row();
   }
 
-  public function save()
-  {
-      $post = $this->input->post();
-      $this->id = 1;
-      $this->synopsis = $post["synopsis"];
-      $this->instagram = $post["instagram"];
-      $this->facebook = $post["facebook"];
-      $this->phone = $post["phone"];
-      $this->email = $post["email"];
-      $this->address = $post["address"];
-      $this->location = $post["location"];
-      $this->db->insert($this->_table, $this);
-  }
-
   public function update()
   {
       $post = $this->input->post();
